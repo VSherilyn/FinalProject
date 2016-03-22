@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" >
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Hotel Deluxe</title>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<script type="text/javascript" media="only screen and (max-width:700px)">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true, 
+				continuous: true
+			});
+		});	
+	</script>
+	
+	<!-- <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" /> -->
+	<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+	<script>
+		$(function()
+		{
+			$('.navigation_mobile').click(function(){
+			$(".shalala").slideToggle('fast');
+			});
+			$('div.shalala div').click(function(){
+			});
+		})
+	</script>
+	
+
+</head>
+
+<body>
+	<header class="up">
+		<a href="#"><div class="logo"><b>HOTEL</b><span class="dlx">DELUXE</span></div></a>
+		<div class="logo1"><i>Hotel&Motel Theme</i></div>
+        <div class="navigation">
+            <a href="index.html"><div class="item1">START</div></a>
+            <a href="#"><div class="item1">FACILITIES</div></a>
+            <a href="restaurant.html"><div class="item1">RESTAURANT</div></a>
+            <a href="#"><div class="item1">CONFERENCE</div></a>
+            <a href="price.html"><div class="item1">BOOKINGS</div></a>
+            <a href="#"><div class="item1">CONTACT US</div></a>
+		<!--<ul class="nav nav-pills">
+			
+				<li class="item"><a href="#">START</a></li>
+				<li class="item"><a href="#">FACILITIES</a></li>
+				<li class="item"><a href="#">RESTAURANT</a></li>
+				<li class="item"><a href="#">CONFERENCE</a></li>
+				<li class="item"><a href="#">BOOKINGS</a></li>
+				<li class="item"><a href="#">CONTACT US</a></li>
+			
+		</ul> --></div>
+		<div id="menulist" class="navigation_mobile">...</div>
+		<div class="shalala" style="display: none">
+		 		<div class="item_mob"><a href="index.html">START</a></div>
+				<div class="item_mob"><a href="#">FACILITIES</a></div>
+				<div class="item_mob"><a href="#">RESTAURANT</a></div>
+				<div class="item_mob"><a href="#">CONFERENCE</a></div>
+				<div class="item_mob"><a href="price.html">BOOKINGS</a></div>
+				<div class="item_mob"><a href="#">CONTACT US</a></div> </div> 
+	</header>
+	
+	<div class="mainpicture">
+	<div class="mp_text">
+		<h4 class="hello"><b>Hello</b>, You've Reached</h4>
+		<br/>
+		<h1>HOTEL DELUXE</h1>
+		<br/>
+		<h4 class="hsf">HOTEL - SPA SALOON - FINE DINING</h4>
+	</div>
+	</div>
+	
+	<div class="transparent"></div>
+	<div class="stylll" style="
+		display: block;
+		width: 57%;
+		left: 0;
+		right: 0;
+		margin: -48px auto 0 auto;
+		position: absolute;
+		border-radius: 34%;
+		height: 97px;
+		box-shadow: 8px 7px 59px 13px rgba(0,0,0,0.75);
+		/* clip: rect(70px, auto, auto, auto); */
+		z-index: 1;
+	"></div>
+	
+	<div class="form_prices">
+		<form name="prices">
+			<div class="pair">
+				<p>Arrival</p>
+				<input type="date" class="arr" placeholder="28/12/15">
+			</div>
+			<div class="pair">
+				<p>Departure</p>
+				<input type="date" class="dep">
+			</div>
+			<div class="pair">
+				<p>Room Type</p>
+				<select name="room" class="choose_r">
+					<option value="ssr">Standard Single Room</option>
+					<option value="sup_sr">Supperior Single Room</option>
+					<option value="sdr">Standard Double Room</option>
+					<option value="sup_dr">Supperior Double Room</option>
+					<option value="fam_r">Family Room</option>
+					<option value="vip_r">VIP Room</option>
+				</select>
+			</div>
+			<div class="pair">
+				<input type="button" value="View Prices" class="subm" onclick="price()" data-toggle="modal" data-target="#myModal">
+			</div>
+		</form>
+	</div>
+
+
+	<div class="book_a">
+		<h2>Book A Package</h2>
+		<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+
+        <div class="slider">
+			<div class="left_arr">
+				<img src="slider-arrow-left.png" width="75" height="150">
+			</div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="right_arr">
+				<img src="slider-arrow-left.png" width="75" height="150">
+			</div>
+		</div>
+	</div>
+	<div class="room_photos">
+	<h2>Our Room Types</h2>
+		<div class="rooms">
+		<figure class="room">
+				<img src="http://www.greenparkpattaya.com/images/020.GreenParkResort-StandardDouble.jpg" width="100%" height="120">
+				<figcaption class="st_double">
+					<h3>Standard Double Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="room">
+				<img src="http://www.adrianhoteles.com/content/imgsxml/en/multimedia/colon-guanahani-hab-doble-superior.jpg" width="100%" height="120">
+				<figcaption class="sup_double">
+					<h3>Superior Double Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+				<figure class="room">
+				<img src="http://www.amberspringshotel.ie/wp-content/uploads/2012/03/Family-room.jpg" width="100%" height="120">
+				<figcaption class="fam_room">
+					<h3>Family Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			</div>
+			<div class="rooms">
+				<figure class="room">
+				<img src="http://image.made-in-china.com/2f0j00vjFTnCyfrpoU/Luxury-Suite-Series-Luxury-Star-Hotel-President-Bedroom-Furniture-Sets-Standard-King-Single-Room-Furniture-Modern-Classic-Single-Room-Furniture-GL-1000-.jpg" width="100%" height="120">
+				<figcaption class="st_single">
+					<h3>Standard Single Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="room">
+				<img src="http://www.jpmoser.com/jpmoser_guide/images/hotelguide/gallery/hotel_28/album/p_gstaad_palace_r2.jpg" width="100%" height="120">
+				<figcaption class="sup_single">
+					<h3>Superior Single Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="room">
+				<img src="http://www.roumeihotel.com.tw/images/beauty-hotels-taipei-roumei-hotel-vip-room-1.jpg" width="100%" height="120">
+				<figcaption class="vip_room">
+					<h3>VIP Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+	</div></div>
+	<!-- --------------------------------------------------------------------------------------------- -->
+	<div id="container">
+	
+	<div id="slider">
+	<h2>Our Room Types</h2>
+ 		<ul class="ololo">
+ 			<li><figure class="room">
+				<img src="http://www.greenparkpattaya.com/images/020.GreenParkResort-StandardDouble.jpg" width="100%" height="120">
+				<figcaption class="st_double">
+					<h3>Standard Double Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			</li>
+ 			<li><figure class="room">
+				<img src="http://www.adrianhoteles.com/content/imgsxml/en/multimedia/colon-guanahani-hab-doble-superior.jpg" width="100%" height="120">
+				<figcaption class="sup_double">
+					<h3>Superior Double Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			</li>
+ 			<li>	<figure class="room">
+				<img src="http://www.amberspringshotel.ie/wp-content/uploads/2012/03/Family-room.jpg" width="100%" height="120">
+				<figcaption class="fam_room">
+					<h3>Family Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			</li>
+ 			<li>	<figure class="room">
+				<img src="http://image.made-in-china.com/2f0j00vjFTnCyfrpoU/Luxury-Suite-Series-Luxury-Star-Hotel-President-Bedroom-Furniture-Sets-Standard-King-Single-Room-Furniture-Modern-Classic-Single-Room-Furniture-GL-1000-.jpg" width="100%" height="120">
+				<figcaption class="st_single">
+					<h3>Standard Single Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			</li>
+ 			<li><figure class="room">
+				<img src="http://www.jpmoser.com/jpmoser_guide/images/hotelguide/gallery/hotel_28/album/p_gstaad_palace_r2.jpg" width="100%" height="120">
+				<figcaption class="sup_single">
+					<h3>Superior Single Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure>
+			</li>
+			<li><figure class="room">
+				<img src="http://www.roumeihotel.com.tw/images/beauty-hotels-taipei-roumei-hotel-vip-room-1.jpg" width="100%" height="120">
+				<figcaption class="vip_room">
+					<h3>VIP Room</h3>
+					<h5>lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+					<div class="icons">
+						<img src="http://sanjanapark.com/images/icons/59.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/40708.png" width="20" height="20">
+						<img src="http://cdn.flaticon.com/png/256/26222.png" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i88313/icons8/ios7/Household-Microwave.ico" width="20" height="20">
+						<img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" width="20" height="20">
+						<img src="http://uxrepo.com/static/icon-sets/ionicons/svg/coffee.svg" width="20" height="20">
+					</div>
+				</figcaption>
+			</figure></li>
+ 		</ul>
+ 	</div></div>
+ <!-- ------------------------------------------------------------------------------------------------------ -->
+	<div class="city_located">
+		<figure class="hotels_ww">
+			<h2>143 City Located Hotels World Wide</h2>
+			<figcaption class="best_hotels">
+				<h4>"Hospitality, Quality & Good locations. We only provide you with the best hotels" - John Doe</h4>
+			</figcaption>
+		</figure>
+		<div class="businessman">
+			 <img src="http://pngimg.com/upload/businessman_PNG6582.png" width="230" height="330"> 
+		</div>
+	</div>
+	
+	<div class="cl_mob">
+		<h2>143 City Located Hotels World Wide</h2>
+		<h4>"Hospitality, Quality & Good locations. We only provide you with the best hotels"<br> - <br>John Doe</h4>
+		<div class="face"><img src="http://www.causeyorthodontics.com/wp-content/uploads/2015/01/iStock_000020004182Medium1.jpg"></div>
+	</div>
+
+    <footer class="foot">
+        <div class="row-fluid">
+            <div class="col-md-1"></div>
+            <figure class="about">
+                <h3>ABOUT THIS HOTEL</h3>
+                <figcaption>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+                </figcaption>
+            </figure></div>
+        <div class="col-md-2">
+            <figure class="latest">
+                <h3>LATEST NEWS</h3>
+                <figcaption>
+                    <h5>Grand Hotel joins DeluxeHotels</h5>
+                    <h5>Happy Christmas To Everyone</h5>
+                    <h5>Best Places To visit 2016</h5>
+                    <h5>Various Offers</h5>
+                </figcaption>
+            </figure></div>
+        <div class="col-md-3">
+            <figure class="join">
+                <h3>JOIN DELUXEHOTELS</h3>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+                <h5>Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+                <button class="read_more"><b>READ MORE</b></button>
+            </figure></div>
+        <div class="col-md-2">
+            <figure class="area">
+                <h3>MEMBERS AREA</h3>
+                <figcaption>
+                    <form class="login_form">
+                        <p>Username</p>
+                        <input type="username" class="log_area">
+                        <p>Password</p>
+                        <input type="password" class="log_area">
+                        <input type="submit" value="LOGIN" class="subm_log">
+                    </form>
+                </figcaption>
+            </figure></div>
+        </div>
+    </footer>
+	
+	<div class="black_line">
+	</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Fucking prices</h4>
+                </div>
+                <div class="modal-body" id="modalbody">
+                    Ф дще ща агслштп зкшсуі
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="modal_button_1">Close</button>
+                    <button type="button" class="btn btn-primary" id="modal_button_2">Fuck you</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/modal_prices.js"></script>
+</body>
+</html>

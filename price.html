@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" >
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Bookings - Hotel DeLuxe</title>
+	
+	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<script type="text/javascript" media="only screen and (max-width:700px)">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true, 
+				continuous: true
+			});
+		});	
+	</script>
+	
+	<!-- <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" /> -->
+	<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+	<script>
+		$(function()
+		{
+			$('.navigation_mobile').click(function(){
+			$(".shalala").slideToggle('fast');
+			});
+			$('div.shalala div').click(function(){
+			});
+		})
+	</script>
+	
+
+</head>
+
+<body>
+    <header class="up">
+        <a href="index.html"><div class="logo"><b>HOTEL</b><span class="dlx">DELUXE</span></div></a>
+        <div class="logo1"><i>Hotel&Motel Theme</i></div>
+        <div class="navigation">
+            <a href="index.html"><div class="item1">START</div></a>
+            <a href="#"><div class="item1">FACILITIES</div></a>
+            <a href="restaurant.html"><div class="item1">RESTAURANT</div></a>
+            <a href="#"><div class="item1">CONFERENCE</div></a>
+            <a href="price.html"><div class="item1">BOOKINGS</div></a>
+            <a href="#"><div class="item1">CONTACT US</div></a>
+        </div>
+        <div id="menulist" class="navigation_mobile">...</div>
+        <div class="shalala" style="display: none">
+            <div class="item_mob"><a href="index.html">START</a></div>
+            <div class="item_mob"><a href="#">FACILITIES</a></div>
+            <div class="item_mob"><a href="#">RESTAURANT</a></div>
+            <div class="item_mob"><a href="#">CONFERENCE</a></div>
+            <div class="item_mob"><a href="price.html">BOOKINGS</a></div>
+            <div class="item_mob"><a href="#">CONTACT US</a></div> </div>
+    </header>
+
+
+	<div class="row" id="rowww">
+        <div class="col-md-8 col-md-offset-2">
+
+            <h2>Our prices</h2>
+            <h4 style="text-align: center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+            <br/>
+            <table class="table table-bordered hotel-table">
+                <thead>
+                <tr>
+                    <th id="first"><button class="sort" onclick="sortingS()"><</button> Service</th>
+                    <th id="second"><button class="sort" onclick="sortingD()"><</button> Discount</th>
+                    <th id="third"><button class="sort" onclick="sortingP()"><</button> Price</th>
+                </tr>
+                </thead>
+                <tbody id="taaable">
+                <tr>
+                    <td>Service 1</td>
+                    <td>10%</td>
+                    <td>100$</td>
+                </tr>
+                <tr>
+                    <td>Service 2</td>
+                    <td>15%</td>
+                    <td>90$</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+	</div>
+    <br/> <br/>
+ <!-- ------------------------------------------------------------------------------------------------------ -->
+	<div class="city_located">
+		<figure class="hotels_ww">
+			<h2>143 City Located Hotels World Wide</h2>
+			<figcaption class="best_hotels">
+				<h4>"Hospitality, Quality & Good locations. We only provide you with the best hotels" - John Doe</h4>
+			</figcaption>
+		</figure>
+		<div class="businessman">
+			 <img src="http://pngimg.com/upload/businessman_PNG6582.png" width="230" height="330">
+		</div>
+	</div>
+
+	<div class="cl_mob">
+		<h2>143 City Located Hotels World Wide</h2>
+		<h4>"Hospitality, Quality & Good locations. We only provide you with the best hotels"<br> - <br>John Doe</h4>
+		<div class="face"><img src="http://www.causeyorthodontics.com/wp-content/uploads/2015/01/iStock_000020004182Medium1.jpg"></div>
+	</div>
+
+	<footer class="foot">
+        <div class="row-flex">
+            <div class="col-md-1"></div>
+		<figure class="about">
+			<h3>ABOUT THIS HOTEL</h3>
+			<figcaption>
+				<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+				<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+			</figcaption>
+		</figure></div>
+        <div class="col-md-2">
+		<figure class="latest">
+			<h3>LATEST NEWS</h3>
+			<figcaption>
+				<h5>Grand Hotel joins DeluxeHotels</h5>
+				<h5>Happy Christmas To Everyone</h5>
+				<h5>Best Places To visit 2016</h5>
+				<h5>Various Offers</h5>
+			</figcaption>
+		</figure></div>
+        <div class="col-md-3">
+		<figure class="join">
+			<h3>JOIN DELUXEHOTELS</h3>
+			<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+			<h5>Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+			<button class="read_more"><b>READ MORE</b></button>
+		</figure></div>
+        <div class="col-md-2">
+		<figure class="area">
+			<h3>MEMBERS AREA</h3>
+			<figcaption>
+				<form class="login_form">
+					<p>Username</p>
+					<input type="username" class="log_area">
+					<p>Password</p>
+					<input type="password" class="log_area">
+					<input type="submit" value="LOGIN" class="subm_log">
+				</form>
+			</figcaption>
+		</figure></div>
+        </div>
+	</footer>
+
+	<div class="black_line">
+	</div>
+
+<script src="js/main.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

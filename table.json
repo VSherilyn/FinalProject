@@ -1,0 +1,24 @@
+{
+  "tabledata": [
+    {
+      "service": "Service 1",
+      "discount": "10",
+      "price": "100"
+    },
+    {
+      "service": "Service 2",
+      "discount": "15",
+      "price": "90"
+    },
+    {
+      "service": "Service 3",
+      "discount": "20",
+      "price": "120"
+    },
+    {
+      "service": "Service 4",
+      "discount": "5",
+      "price": "95"
+    }
+  ]
+}
