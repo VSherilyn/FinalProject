@@ -205,8 +205,21 @@ h2 {
   position: relative;
 
   display: inline-flex;
-  background-image: url('../081-St-Regis-Luxury-Hotel-Singapore-President-Suite-Balcony.jpg');
-  background-position: 60% 50%;
+  /*background-image: url('../081-St-Regis-Luxury-Hotel-Singapore-President-Suite-Balcony.jpg');
+  background-position: 60% 50%; */
+}
+#circle1 {
+  background-image: url('http://cdn.tvc.ru/pictures/nb/841/15.jpg');
+  background-position: 60% 0;
+}
+#circle2 {
+  background-image: url('http://static1.repo.aif.ru/1/8c/50913/89d174318cac8c89e5766343c3fe74e8.jpg');
+  display: none;
+  background-position: 40% 0;
+}
+#circle3 {
+  background-image: url('http://cs410423.vk.me/g40262846/a_1c1f0cb8.jpg');
+  display: none;
 }
 
 .right_arr img{
@@ -344,7 +357,7 @@ h2 {
   max-width: 350px;
 }
 
-.read_more {
+.read_more, .logged {
   width: 110px;
   height: 32px;
   border-radius: 13px;
@@ -445,6 +458,20 @@ input {
     }
 
 } */
+.paginate_button {
+  background-color: #ffd700;
+}
+
+.log_area {
+  color: white !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logged_in {
+  display: none;
+}
+
 @media screen and (max-width: 1450px) {
   .up {
     font-size: 0.8em;
@@ -503,6 +530,10 @@ input {
     justify-content: space-around;
     font-size: 0.8em;
   }
+  .subm {
+    width: auto;
+
+  }
   .subm_log, .read_more {
     height: auto;
   }
@@ -524,7 +555,8 @@ input {
     display: none;
   }
   .form_prices {
-    top: 430px;
+    top: 480px;
+    width: 85%;
   }
   .navigation_mobile {
     display: block;
@@ -543,6 +575,9 @@ input {
     letter-spacing: 3px;
     box-sizing: border-box;
     cursor: pointer;
+    border: 1px solid #ffd700;
+    transform: rotate(90deg);
+    font-size: 160%;
   }
   .logo {
     margin: 0px;
@@ -556,7 +591,7 @@ input {
 
   .up {
     height: 50px;
-    position: fixed;
+    position: relative;
     z-index: 500;
   }
   .rooms {
@@ -567,6 +602,11 @@ input {
   }
 }
 
+#table_container {
+  margin: 2% auto;
+  max-width: 90%;
+  min-height: 60vh;
+}
 
 @media screen and (max-width: 750px) {
   html, body {
@@ -620,9 +660,14 @@ input {
   }
 
   .pair {
-    width: 80%;
+
     display: block;
 
+  }
+
+  .arr, .dep, .choose_r {
+
+    width: 100%;
   }
 
   .form_prices {
@@ -692,6 +737,7 @@ input {
 
   .room {
     width: 80vw;
+    left: 8.5%;
   }
   .room>img {
     width: 60% !important;

@@ -2,27 +2,31 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" >
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Lorem ipsum dolor sit amet">
+    <meta name="keywords" content="hotel, deluxe, luxury, holidays, price, prices, hotel deluxe">
+
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+
 	<title>Bookings - Hotel DeLuxe</title>
 	
 	<script type="text/javascript" src="js/jquery.js"></script> 
 	<script type="text/javascript" src="js/easySlider1.7.js"></script>
-	<script type="text/javascript" media="only screen and (max-width:700px)">
-		$(document).ready(function(){	
-			$("#slider").easySlider({
-				auto: true, 
-				continuous: true
-			});
-		});	
-	</script>
-	
-	<!-- <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" /> -->
-	<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script>
+        $(function()
+        {
+            $('.navigation_mobile').click(function(){
+                $(".shalala").slideToggle('fast');
+            });
+            $('div.shalala div').click(function(){
+            });
+        })
+    </script>
+
 	<script>
 		$(function()
 		{
@@ -45,7 +49,7 @@
             <a href="index.html"><div class="item1">START</div></a>
             <a href="#"><div class="item1">FACILITIES</div></a>
             <a href="restaurant.html"><div class="item1">RESTAURANT</div></a>
-            <a href="#"><div class="item1">CONFERENCE</div></a>
+            <a href="conference.html"><div class="item1">CONFERENCE</div></a>
             <a href="price.html"><div class="item1">BOOKINGS</div></a>
             <a href="#"><div class="item1">CONTACT US</div></a>
         </div>
@@ -54,7 +58,7 @@
             <div class="item_mob"><a href="index.html">START</a></div>
             <div class="item_mob"><a href="#">FACILITIES</a></div>
             <div class="item_mob"><a href="#">RESTAURANT</a></div>
-            <div class="item_mob"><a href="#">CONFERENCE</a></div>
+            <div class="item_mob"><a href="conference.html">CONFERENCE</a></div>
             <div class="item_mob"><a href="price.html">BOOKINGS</a></div>
             <div class="item_mob"><a href="#">CONTACT US</a></div> </div>
     </header>
@@ -137,29 +141,32 @@
 			<h3>JOIN DELUXEHOTELS</h3>
 			<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
-			<h5>Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
-			<button class="read_more"><b>READ MORE</b></button>
+			<h5 id="read_add">Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+			<button class="read_more" id="read_more"><b>READ MORE</b></button>
 		</figure></div>
         <div class="col-md-2">
 		<figure class="area">
-			<h3>MEMBERS AREA</h3>
-			<figcaption>
-				<form class="login_form">
-					<p>Username</p>
-					<input type="username" class="log_area">
-					<p>Password</p>
-					<input type="password" class="log_area">
-					<input type="submit" value="LOGIN" class="subm_log">
-				</form>
-			</figcaption>
-		</figure></div>
-        </div>
-	</footer>
+            <h3>MEMBERS AREA</h3>
+            <figcaption>
+                <form class="login_form" id="login_form">
+                    <p>Username</p>
+                    <input type="text" class="log_area" id="usrname" onchange="t = get_value(this)">
+                    <p>Password</p>
+                    <input type="password" class="log_area" id="passw">
+                    <input type="button" value="LOGIN" class="subm_log" id="subm_log" onclick="setCookies(t)">
+                </form>
+                <div id="logged_in" class="logged_in">
+                    <h5>Hello, <strong><i id="hello_usr"></i></strong></h5><button class='logged' onclick='logout()'><b>LOG OUT</b></button>
+                </div>
+            </figcaption>
+        </figure></div>
+    </footer>
 
 	<div class="black_line">
 	</div>
 
 <script src="js/main.js"></script>
+<script src="js/login_form.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

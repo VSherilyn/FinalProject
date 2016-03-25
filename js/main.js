@@ -75,3 +75,49 @@ function sortingP1() {
     createTable(compareP1);
     document.getElementById('third').innerHTML = '<button class="sort" onclick="sortingP()"><</button> Price';
 }
+//------------------------------
+
+function read_m() {
+    document.getElementById("read_add").innerHTML = "Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.";
+    document.getElementById("read_more").style.display = "none";
+}
+var elem = document.getElementById("read_more");
+elem.addEventListener("click", read_m);
+
+//----------------------------
+
+var a1 = document.getElementById("circle1");
+var a2 = document.getElementById("circle2");
+var a3 = document.getElementById("circle3");
+
+function slider1() {
+    if (a1.style.display != "none") {
+        a1.style.display = "none";
+        a2.style.display = "block";
+    } else if (a2.style.display != "none") {
+            a2.style.display = "none";
+            a3.style.display = "block";
+        } else if (a3.style.display != "none") {
+                a3.style.display = "none";
+                a1.style.display = "block";
+        }
+}
+
+var a4 = document.getElementById("right_arr");
+a4.addEventListener("click", slider1);
+
+function slider2() {
+    if (a1.style.display != "none") {
+        a1.style.display = "none";
+        a3.style.display = "block";
+    } else if (a3.style.display != "none") {
+        a3.style.display = "none";
+        a2.style.display = "block";
+    } else if (a2.style.display != "none") {
+        a2.style.display = "none";
+        a1.style.display = "block";
+    }
+}
+
+var a5 = document.getElementById("left_arr");
+a5.addEventListener("click", slider2);

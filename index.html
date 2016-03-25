@@ -2,18 +2,22 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" >
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Это очень уникальный сайт с уникальным контентом, вот, даже метатег есть. В общем, задание выполнено.">
+    <meta name="keywords" content="hotel, deluxe, luxury, holidays">
+
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+
 	<title>Hotel Deluxe</title>
-	
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
 	<script type="text/javascript" src="js/easySlider1.7.js"></script>
-	<script type="text/javascript" media="only screen and (max-width:700px)">
+	<script type="text/javascript" media="only screen and (max-width:750px)">
 		$(document).ready(function(){	
 			$("#slider").easySlider({
 				auto: true, 
@@ -21,7 +25,14 @@
 			});
 		});	
 	</script>
-	
+	<script>
+        $(document).resize(function(){
+            $("#slider").easySlider({
+                auto: true,
+                continuous: true
+            });
+        });
+    </script>
 	<!-- <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" /> -->
 	<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
 	<script>
@@ -46,25 +57,16 @@
             <a href="index.html"><div class="item1">START</div></a>
             <a href="#"><div class="item1">FACILITIES</div></a>
             <a href="restaurant.html"><div class="item1">RESTAURANT</div></a>
-            <a href="#"><div class="item1">CONFERENCE</div></a>
+            <a href="conference.html"><div class="item1">CONFERENCE</div></a>
             <a href="price.html"><div class="item1">BOOKINGS</div></a>
             <a href="#"><div class="item1">CONTACT US</div></a>
-		<!--<ul class="nav nav-pills">
-			
-				<li class="item"><a href="#">START</a></li>
-				<li class="item"><a href="#">FACILITIES</a></li>
-				<li class="item"><a href="#">RESTAURANT</a></li>
-				<li class="item"><a href="#">CONFERENCE</a></li>
-				<li class="item"><a href="#">BOOKINGS</a></li>
-				<li class="item"><a href="#">CONTACT US</a></li>
-			
-		</ul> --></div>
-		<div id="menulist" class="navigation_mobile">...</div>
+	    </div>
+		<div id="menulist" class="navigation_mobile">|||</div>
 		<div class="shalala" style="display: none">
 		 		<div class="item_mob"><a href="index.html">START</a></div>
 				<div class="item_mob"><a href="#">FACILITIES</a></div>
-				<div class="item_mob"><a href="#">RESTAURANT</a></div>
-				<div class="item_mob"><a href="#">CONFERENCE</a></div>
+				<div class="item_mob"><a href="restaurant.html">RESTAURANT</a></div>
+				<div class="item_mob"><a href="conference.html">CONFERENCE</a></div>
 				<div class="item_mob"><a href="price.html">BOOKINGS</a></div>
 				<div class="item_mob"><a href="#">CONTACT US</a></div> </div> 
 	</header>
@@ -90,7 +92,6 @@
 		border-radius: 34%;
 		height: 97px;
 		box-shadow: 8px 7px 59px 13px rgba(0,0,0,0.75);
-		/* clip: rect(70px, auto, auto, auto); */
 		z-index: 1;
 	"></div>
 	
@@ -98,7 +99,7 @@
 		<form name="prices">
 			<div class="pair">
 				<p>Arrival</p>
-				<input type="date" class="arr" placeholder="28/12/15">
+				<input type="date" class="arr">
 			</div>
 			<div class="pair">
 				<p>Departure</p>
@@ -129,13 +130,13 @@
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
 
         <div class="slider">
-			<div class="left_arr">
+			<div class="left_arr" id="left_arr">
 				<img src="slider-arrow-left.png" width="75" height="150">
 			</div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="right_arr">
+			<div class="circle" id="circle1"></div>
+			<div class="circle" id="circle2"></div>
+			<div class="circle" id="circle3"></div>
+			<div class="right_arr" id="right_arr">
 				<img src="slider-arrow-left.png" width="75" height="150">
 			</div>
 		</div>
@@ -383,20 +384,23 @@
                 <h3>JOIN DELUXEHOTELS</h3>
                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
-                <h5>Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
-                <button class="read_more"><b>READ MORE</b></button>
+                <h5 id="read_add">Etiam vel sapien tempor, suscipit lorem vel, pulvinar dui.</h5>
+                <button class="read_more" id="read_more"><b>READ MORE</b></button>
             </figure></div>
         <div class="col-md-2">
             <figure class="area">
                 <h3>MEMBERS AREA</h3>
                 <figcaption>
-                    <form class="login_form">
+                    <form class="login_form" id="login_form">
                         <p>Username</p>
-                        <input type="username" class="log_area">
+                        <input type="text" class="log_area" id="usrname" onchange="t = get_value(this)">
                         <p>Password</p>
-                        <input type="password" class="log_area">
-                        <input type="submit" value="LOGIN" class="subm_log">
+                        <input type="password" class="log_area" class="passw">
+                        <input type="button" value="LOGIN" class="subm_log" id="subm_log" onclick="setCookies(t)">
                     </form>
+                    <div id="logged_in" class="logged_in">
+                        <h5>Hello, <strong><i id="hello_usr"></i></strong></h5><button class='logged' onclick='logout()'><b>LOG OUT</b></button>
+                    </div>
                 </figcaption>
             </figure></div>
         </div>
@@ -417,13 +421,15 @@
                     Ф дще ща агслштп зкшсуі
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" id="modal_button_1">Close</button>
-                    <button type="button" class="btn btn-primary" id="modal_button_2">Fuck you</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="modal_button_2">Close</button>
+
                 </div>
             </div>
         </div>
     </div>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/modal_prices.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login_form.js"></script>
 </body>
 </html>
